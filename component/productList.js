@@ -1,4 +1,6 @@
-app.component("product-list", {
+const app = Vue.createApp({})
+
+app.component('product-list', {
   template:
     /*html*/
     `<div class="test">
@@ -7,3 +9,5 @@ app.component("product-list", {
       <button v-on:click="plusButton">+</button>
     </div>`
 })
+
+app.mount('#app')
