@@ -1,1 +1,11 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Praise&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navigasi h1 {
+  font-family: 'Praise', cursive;
+  font-size: 4rem;
+}
+/*# sourceMappingURL=style.css.map */
