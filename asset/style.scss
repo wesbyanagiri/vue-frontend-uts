@@ -1,109 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Praise&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Praise&display=swap");
 
-$mainColor : #C85C5C;
-$secondaryColor : #F9975D;
-$thirdColor : #B2EA70;
-$fourthColor : #D9CAB3;
-$naturalColor1 : white;
-$naturalColor2 : #F6F6F6;
-
+$mainColor: #c85c5c;
+$secondaryColor: #f9975d;
+$thirdColor: #b2ea70;
+$fourthColor: #d9cab3;
+$fivethColor: #c0c0c0;
+$netralColor: white;
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-.navigasi{
-    background-color: $fourthColor;
+// NAVIGASI PAGE
+.navigasi {
+  background-color: $fourthColor;
+  padding: 0px;
 
+  a {
+    text-decoration: none;
+    display: block;
     h1 {
-        font-family: 'Praise', cursive;;
-        font-size: 4rem;
-        color: $naturalColor;
+      font-family: "Praise", cursive;
+      font-size: 4rem;
+      color: $mainColor;
+      transition: 200ms;
+      padding: 12px;
+      width: 100px;
+      height: 100px;
     }
-
-    .navbar {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        text-align: center;
-        
-        ul {
-            list-style: none;
-            position: relative;
-            display: inline-table;
-
-            a {
-                color: $naturalColor;
-                font-size: 1.2rem;
-                text-decoration: none;
-                display: block;
-    
-                .btn {
-                    background-color: $thirdColor;
-                    padding: 12px;
-                }
-            }
-        }        
+    h1:hover {
+      color: white;
     }
+  }
+
+  .navbar {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+
+    ul {
+      text-align: right;
+      a {
+        color: $mainColor;
+        font-size: 1.2rem;
+        text-decoration: none;
+        display: block;
+
+        .btn {
+          background-color: $thirdColor;
+          padding: 12px;
+        }
+      }
+    }
+  }
 }
 
-
+// PRODUCT LIST
 .product-list {
-    font-family: 'Montserrat', sans-serif;
-    padding: 10px 0;
-    height: auto;
-    width: 80%;
-    color: $secondaryColor;
-    margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  padding: 30px 0;
+  height: auto;
+  width: 80%;
+  color: $secondaryColor;
+  margin: 0 auto;
 
-    .header {
-        padding: 10px 0;
-        font-size: 30px;
-        text-align: center;
-        text-transform: uppercase;
-    }
+  .header-product {
+    text-align: center;
+    text-transform: uppercase;
+  }
 
-    .container-product {
-        display: flex;
-        height: 100vh;
-        margin: auto;
-        padding: 20px;
-        gap: 20px;
-    
-        .con-product {
-            height: 480px;
-            width: 800px;
-            box-shadow: 0 6px 12px rgba(232, 225, 217, .5);
-            
-            img {
-                width: 100%;
-                height: 300px;
-                object-fit: cover;
-            }
-            .con-body {
-                color: $secondaryColor;
-                padding: 10px 15px;
-                margin: 10px 0;
-                width: 80%;
-                h1 {
-                    font-size: 25px;
-                    padding: 10px 0;
-                }
-                h4 {
-                    font-size: 14px;
-                    padding: 4px 0;
-                    color: $naturalColor2;
-                }
-                a {
-                    color: $naturalColor;
-                    border-radius: 5px;
-                    margin: 12px 0px;
-                    padding: 10px 22px;
-                    background-color: $thirdColor;
-                    text-decoration: none;
-                    display: block;
-                }
-            }
+  .container-product {
+    display: flex;
+    height: 100vh;
+    margin: auto;
+    padding: 25px 20px;
+    gap: 20px;
+
+    .con-product {
+      height: 480px;
+      width: 800px;
+      box-shadow: 0 6px 12px rgba(232, 225, 217, 0.5);
+      display: inline-block;
+      vertical-align: middle;
+      transform: translateZ(0);
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      transition-duration: 0.3s;
+      transition-property: transform;
+      transition-timing-function: ease-out;
+
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+      .con-body {
+        padding: 10px 15px;
+        margin: 10px 0;
+        width: 80%;
+        h1 {
+          color: $secondaryColor;
+          font-size: 25px;
+          padding: 10px 0;
         }
+        h4 {
+          color: $fivethColor;
+          font-size: 14px;
+          padding: 4px 0;
+          font-weight: 300;
+        }
+        a {
+          color: white;
+          border-radius: 5px;
+          margin: 12px 0px;
+          padding: 10px 22px;
+          background-color: $thirdColor;
+          text-decoration: none;
+          display: block;
+        }
+      }
     }
-}   
+    .con-product:hover,
+    .con-product:focus,
+    .con-product:active {
+      transform: translateY(-8px);
+    }
+  }
+}

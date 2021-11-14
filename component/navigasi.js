@@ -2,7 +2,7 @@ app.component('navigasi', {
     template:
       /*html*/
       `<div class="navigasi">
-        <h1>Planty</h1>
+      <a href="#" class="header"><h1>Planty</h1></a>
 
         <div class="navbar">
             <ul>
