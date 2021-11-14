@@ -28,13 +28,61 @@
 
 .navigasi .navbar .btn {
   background-color: #C85C5C;
-  padding: 12px;
-  border-radius: 12px;
+  padding: 8px;
+  border-radius: 6px;
 }
 
 .navigasi .navbar a {
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: block;
+}
+
+.product-list {
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 0;
+  width: 80%;
+  height: 40px;
+}
+
+.product-list .container-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  padding: 20px;
+  margin: auto;
+  gap: 20px;
+}
+
+.product-list .container-product .con-product {
+  width: 500px;
+  -webkit-box-shadow: 0 6px 12px rgba(232, 225, 217, 0.6);
+          box-shadow: 0 6px 12px rgba(232, 225, 217, 0.6);
+}
+
+.product-list .container-product .con-product .con-body {
+  padding: 10px 15px;
+}
+
+.product-list .container-product .con-product img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product-list .container-product .con-product h1 {
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+.product-list .container-product .con-product a {
+  color: white;
+  margin: 12px 0px;
+  padding: 10px 22px;
+  background-color: #B2EA70;
   text-decoration: none;
   display: block;
 }

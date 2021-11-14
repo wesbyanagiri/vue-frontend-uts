@@ -19,6 +19,7 @@ $naturalColor : white;
         font-size: 4rem;
         color: $naturalColor;
     }
+
     .navbar {
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
@@ -31,14 +32,58 @@ $naturalColor : white;
         }
         .btn {
             background-color: $mainColor;
-            padding: 12px;
-            border-radius: 12px;
+            padding: 8px;
+            border-radius: 6px;
         }
         a {
             color: $naturalColor;
-            font-size: 1.8rem;
+            font-size: 1.2rem;
             text-decoration: none;
             display: block;
         }
     }
+}
+
+.product-list {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 0 auto;
+  }
+    .container-product {
+        display: flex;
+        height: 100vh;
+        padding: 20px;
+        margin: auto;
+        gap: 20px;
+    
+        .con-product {
+            width: 500px;
+            box-shadow: 0 6px 12px rgba(232, 225, 217, .6);
+    
+            .con-body {
+                padding: 10px 15px;
+            }
+            img {
+                width: 100%;
+                height: 100px;
+                object-fit: cover;
+            }
+    
+            h1 {
+                padding: 10px 0;
+                font-size: 30px;
+            }
+            a {
+                color: $naturalColor;
+                margin: 12px 0px;
+                padding: 10px 22px;
+                background-color: $thirdColor;
+                text-decoration: none;
+                display: block;
+            }
+        }
+    }    
 }
