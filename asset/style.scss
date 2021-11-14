@@ -17,39 +17,35 @@ $netralColor: white;
   background-color: $fourthColor;
   padding: 0px;
 
-  a {
-    text-decoration: none;
-    display: block;
-    h1 {
-      font-family: "Praise", cursive;
-      font-size: 4rem;
-      color: $mainColor;
-      transition: 200ms;
-      padding: 12px;
-      width: 100px;
-      height: 100px;
-    }
-    h1:hover {
-      color: white;
-    }
-  }
-
   .navbar {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+    a {
+      text-decoration: none;
+      display: block;
 
-    ul {
-      text-align: right;
+      h1 {
+        font-family: "Praise", cursive;
+        font-size: 4rem;
+        color: $mainColor;
+        transition: 200ms;
+        width: 100px;
+        height: 100px;
+      }
+      h1:hover {
+        color: white;
+      }
+
+      ul {
+        text-align: right;
+      }
       a {
         color: $mainColor;
         font-size: 1.2rem;
         text-decoration: none;
         display: block;
-
-        .btn {
-          background-color: $thirdColor;
-          padding: 12px;
-        }
+      }
+      .btn {
+        background-color: $thirdColor;
+        padding: 12px;
       }
     }
   }
@@ -71,7 +67,7 @@ $netralColor: white;
 
   .container-product {
     display: flex;
-    height: 100vh;
+    height: 60vh;
     margin: auto;
     padding: 25px 20px;
     gap: 20px;
@@ -125,5 +121,25 @@ $netralColor: white;
     .con-product:active {
       transform: translateY(-8px);
     }
+  }
+}
+
+// PRODUCT DETAILS
+.product-details {
+  font-family: "Montserrat", sans-serif;
+  color: $secondaryColor;
+  padding: 30px 0;
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+
+  h1 {
+      text-align: center;
+  }
+
+  img {
+      width: 300px;
+      height: 400px;
+      object-fit: cover;
   }
 }
