@@ -3,7 +3,7 @@ app.component('product-list', {
     /*html*/
     `<div class="product-list">
     <div class="header-product">
-        <h1>List Produk</h1>
+        <h1 class="header">List Produk</h1>
     </div>
     <div class="container-product">
         <div class="con-product">
