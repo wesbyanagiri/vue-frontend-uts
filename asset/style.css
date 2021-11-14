@@ -1,11 +1,41 @@
-@import url("https://fonts.googleapis.com/css2?family=Praise&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Praise&display=swap");
 * {
   padding: 0;
   margin: 0;
 }
 
+.navigasi {
+  background-color: #E8E1D9;
+}
+
 .navigasi h1 {
   font-family: 'Praise', cursive;
   font-size: 4rem;
+  color: white;
+}
+
+.navigasi .navbar {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.navigasi .navbar ul {
+  list-style: none;
+  position: relative;
+  display: inline-table;
+}
+
+.navigasi .navbar .btn {
+  background-color: #C85C5C;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.navigasi .navbar a {
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

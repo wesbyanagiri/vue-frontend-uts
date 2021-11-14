@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Praise&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Praise&display=swap');
 
 $mainColor : #C85C5C;
 $secondaryColor : #F9975D;
 $thirdColor : #B2EA70;
+$fourthColor : #E8E1D9;
+$naturalColor : white;
+
 
 * {
     padding: 0;
@@ -11,12 +13,32 @@ $thirdColor : #B2EA70;
 }
 
 .navigasi{
+    background-color: $fourthColor;
     h1 {
         font-family: 'Praise', cursive;;
         font-size: 4rem;
+        color: $naturalColor;
     }
-}
-
-.product-list{
-    
+    .navbar {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        
+        ul {
+            list-style: none;
+            position: relative;
+            display: inline-table;
+        }
+        .btn {
+            background-color: $mainColor;
+            padding: 12px;
+            border-radius: 12px;
+        }
+        a {
+            color: $naturalColor;
+            font-size: 1.8rem;
+            text-decoration: none;
+            display: block;
+        }
+    }
 }
