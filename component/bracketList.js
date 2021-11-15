@@ -9,17 +9,30 @@ app.component("brackets-list", {
         <th width="40px">Diskon</th>
         <th width="90px">Total</th>
       </tr>
-
       <tr class="contents">
-        <td align="center">1</td>
-        <td>Nama</td>
-        <td align="center">Harga</td>
-        <td align="center">-</td>
-        <td align="center">Total</td>
+        <td align="center">{{ no }}</td>
+        <td>{{ name }}</td>
+        <td align="center">{{ price }}</td>
+        <td align="center">{{ diskon }}</td>
+        <td align="center">{{ total }}</td>
       </tr>
       <tr>
-        <td><button class="plus">Tambah</button></td>
+        <td><button class="plus" @click="backToIndex()">Tambah</button></td>
         <td><button class="buy">Bayar</button></td>
     </tr>  
     </table>`,
+  data() {
+    return {
+      no: 1,
+      name: "Lidah Buaya",
+      diskon: 0,
+      price: 5000,
+      total: 5000,
+    };
+  },
+  methods: {
+    backToIndex: function () {
+      window.location.href = "./index.html";
+    },
+  },
 });

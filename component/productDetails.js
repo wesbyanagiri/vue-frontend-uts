@@ -21,17 +21,17 @@ app.component("product-details", {
                 </div>
 
                 <div class="quantity">
-                  <button>- {{ minusButton }}</button>
+                  <button @click="minusButton()">-</button>
                   <p class="count">{{ counter }}</p>
-                  <button>+ {{ plusButton }}</button>
+                  <button @click="plusButton()">+</button>
                   <p>Stok {{ stock }}</p>
                 </div>
                 
                 <div class="price">
                   <p>Subtotal</p>
                   <h3>{{ price }}</h3>
-                  <button>Beli Langsung</button>
-                  <button>Keranjang</button>
+                  <button @click="stocksPayments()">Beli Langsung</button>
+                  <button @click="stocksBuckets()">Keranjang</button>
                 </div>
               </td>
             </tr>
@@ -39,20 +39,35 @@ app.component("product-details", {
         </div>
       </div>
     </div>`,
-    data() {
-      return {
-        stock: 200,
-        counter: 0,
-        price: 5.000
-      };
+  data() {
+    return {
+      stock: 1,
+      counter: 0,
+      price: 5000,
+    };
+  },
+  methods: {
+    plusButton() {
+      this.counter++;
     },
-  
-    methods: {
-      plusButton() {
-        this.counter++;
-      },
-      minusButton() {
-        this.counter--;
-      },
+    minusButton() {
+      this.counter--;
     },
+    stocksPayments: function () {
+      if (this.stock <= 0) {
+        alert("Tanaman tidak tersedia !");
+      } else if (this.stock > 0) {
+        this.stock = this.stock - this.counter;
+        window.location.href = "./donePage.html";
+      }
+    },
+    stocksBuckets: function () {
+      if (this.stock <= 0) {
+        alert("Tanaman tidak tersedia !");
+      } else if (this.stock > 0) {
+        this.stock = this.stock - this.counter;
+        window.location.href = "./bracketsList.html";
+      }
+    },
+  },
 });
