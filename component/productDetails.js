@@ -1,7 +1,7 @@
-app.component('product-details', {
-    template:
-      /*html*/
-      `<div class="product-details">
+app.component("product-details", {
+  template:
+    /*html*/
+    `<div class="product-details">
       <h1>Detail Produk</h1>
       <div class="container-details">
         <div class="con-header">
@@ -38,5 +38,5 @@ app.component('product-details', {
           </table>
         </div>
       </div>
-    </div>`
-  })
+    </div>`,
+});

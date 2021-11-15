@@ -1,4 +1,4 @@
-app.component('product-list', {
+app.component("product-list", {
   template:
     /*html*/
     `<div class="product-list">
@@ -50,5 +50,5 @@ app.component('product-list', {
             </div>
         </div>
     </div>
-</div>`
-})
+</div>`,
+});
