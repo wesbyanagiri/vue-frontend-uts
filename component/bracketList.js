@@ -3,8 +3,8 @@ app.component("brackets-list", {
     /*html*/
     `<table class="brackets-list" align="center">
       <tr class="attributs">
-        <th width="20px">No</th>
-        <th width="200px">Nama Produk</th>
+        <th width="10px">No</th>
+        <th width="400px">Nama Produk</th>
         <th width="50px">Harga</th>
         <th width="40px">Diskon</th>
         <th width="90px">Total</th>
@@ -18,8 +18,8 @@ app.component("brackets-list", {
         <td align="center">Total</td>
       </tr>
       <tr>
-        <button class="plus">Tambah</button>
-        <button class="buy">Bayar</button>
-      </tr>
+        <td><button class="plus">Tambah</button></td>
+        <td><button class="buy">Bayar</button></td>
+    </tr>  
     </table>`,
 });

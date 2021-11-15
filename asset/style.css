@@ -8,7 +8,7 @@
   text-align: center;
   padding: 0px;
   width: 100%;
-  height: 150px;
+  height: 180px;
 }
 
 .navigasi a {
@@ -206,12 +206,19 @@
 .brackets-list {
   font-family: "Montserrat", sans-serif;
   margin: 0 auto;
+  padding-bottom: 20px;
   width: 80%;
   height: auto;
 }
 
 .brackets-list .attributs th {
   padding: 20px;
+  font-size: 1.4rem;
+}
+
+.brackets-list .contents td {
+  padding: 15px;
+  font-size: 1rem;
 }
 
 .brackets-list button {
@@ -224,8 +231,9 @@
   color: white;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: inline;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .con-done {

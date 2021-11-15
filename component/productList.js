@@ -14,7 +14,7 @@ app.component("product-list", {
             <div class="con-body">
                 <h1>Harga</h1>
                 <h4>Jenis Produk</h4>
-                <a href="#">Pesan</a>
+                <a href="../productDetails.html">Pesan</a>
             </div>
         </div>
         <div class="con-product hvr-float">
@@ -25,7 +25,7 @@ app.component("product-list", {
             <div class="con-body">
                 <h1>Harga</h1>
                 <h4>Jenis Produk</h4>
-                <a href="#">Pesan</a>
+                <a href="../productDetails.html">Pesan</a>
             </div>
         </div>
         <div class="con-product hvr-float">
@@ -36,7 +36,7 @@ app.component("product-list", {
             <div class="con-body">
                 <h1>Harga</h1>
                 <h4>Jenis Produk</h4>
-                <a href="#">Pesan</a>
+                <a href="./productList.js">Pesan</a>
             </div>
         </div>
         <div class="con-product hvr-float">
@@ -46,7 +46,7 @@ app.component("product-list", {
             <div class="con-body">
                 <h1>Harga</h1>
                 <h4>Jenis Produk</h4>
-                <a href="#" class="btn">Pesan</a>
+                <a href="../productDetails.html" class="btn">Pesan</a>
             </div>
         </div>
     </div>
