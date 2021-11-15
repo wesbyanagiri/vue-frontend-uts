@@ -16,13 +16,13 @@ app.component("product-details", {
               <td valign="top" class="info">
                 <div class="con-header">
                   <h2>Judul Produk</h2>
-                  <h3>Harga</h3>
+                  <h3>{{ price }}</h3>
                   <p>Deskripsi</p>
                 </div>
 
                 <div class="quantity">
                   <button>- {{ minusButton }}</button>
-                  <p>{{ counter }}</p>
+                  <p class="count">{{ counter }}</p>
                   <button>+ {{ plusButton }}</button>
                   <p>Stok {{ stock }}</p>
                 </div>
@@ -49,7 +49,6 @@ app.component("product-details", {
   
     methods: {
       plusButton() {
-        // console.log('tombol tambah')
         this.counter++;
       },
       minusButton() {

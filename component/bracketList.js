@@ -1,23 +1,24 @@
 app.component("brackets-list", {
   template:
     /*html*/
-    `<table>
+    `<table class="brackets-list" align="center">
       <tr class="attributs">
-        <th>No</th>
-        <th>Nama Produk</th>
-        <th>Harga</th>
-        <th>Diskon</th>
-        <th>Total</th>
+        <th width="20px">No</th>
+        <th width="200px">Nama Produk</th>
+        <th width="50px">Harga</th>
+        <th width="40px">Diskon</th>
+        <th width="90px">Total</th>
       </tr>
 
       <tr class="contents">
-        <td>1</td>
+        <td align="center">1</td>
         <td>Nama</td>
-        <td>Harga</td>
-        <td>-</td>
-        <td>Total</td>
+        <td align="center">Harga</td>
+        <td align="center">-</td>
+        <td align="center">Total</td>
       </tr>
       <tr>
+        <button class="plus">Tambah</button>
         <button class="buy">Bayar</button>
       </tr>
     </table>`,
