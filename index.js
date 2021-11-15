@@ -1,6 +1,7 @@
 const app = Vue.createApp({
   data() {
     return {
+      stock: 200,
       counter: 1,
     };
   },

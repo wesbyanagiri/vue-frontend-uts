@@ -13,7 +13,7 @@ app.component("product-details", {
                   alt="sirih gading"
                 />
               </td>
-              <td>
+              <td valign="top" class="info">
                 <div class="con-header">
                   <h2>Judul Produk</h2>
                   <h3>Harga</h3>
@@ -21,15 +21,15 @@ app.component("product-details", {
                 </div>
 
                 <div class="quantity">
-                  <button>-</button>
-                  <p>1</p>
-                  <button>+</button>
-                  <p>Stok 1</p>
+                  <button>- {{ minusButton }}</button>
+                  <p>{{ counter }}</p>
+                  <button>+ {{ plusButton }}</button>
+                  <p>Stok {{ stock }}</p>
                 </div>
                 
                 <div class="price">
                   <p>Subtotal</p>
-                  <h3>Harga</h3>
+                  <h3>{{ price }}</h3>
                   <button>Beli Langsung</button>
                   <button>Keranjang</button>
                 </div>
@@ -39,4 +39,21 @@ app.component("product-details", {
         </div>
       </div>
     </div>`,
+    data() {
+      return {
+        stock: 200,
+        counter: 0,
+        price: 5.000
+      };
+    },
+  
+    methods: {
+      plusButton() {
+        // console.log('tombol tambah')
+        this.counter++;
+      },
+      minusButton() {
+        this.counter--;
+      },
+    },
 });
