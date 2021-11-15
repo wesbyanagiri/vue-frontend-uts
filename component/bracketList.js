@@ -24,7 +24,7 @@ app.component("brackets-list", {
   data() {
     return {
       no: 1,
-      name: "Lidah Buaya",
+      name: "Lidah Mertua",
       diskon: 0,
       price: 5000,
       total: 5000,
